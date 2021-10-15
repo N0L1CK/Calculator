@@ -5,16 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Calculator N0L1Ck" Height="450" Width="320" ResizeMode="NoResize">
+        Title="Calculator N0L1Ck" Height="350" Width="320" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -22,31 +21,27 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" Grid.Column="0" Grid.ColumnSpan="4" Background="Black" Foreground="#FF24BB0C" FontSize="48" FontFamily="Bahnschrift Condensed" FlowDirection="RightToLeft" Text="0" />
-        <Button Content="+/-" Grid.Column="0" Grid.Row="6" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickSign"/>
-        <Button Content="0" Grid.Column="1" Grid.Row="6" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="," Grid.Column="2" Grid.Row="6" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickPoint"/>
-        <Button Content="=" Grid.Column="3" Grid.Row="6" Background="#FFB65147" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickEqls"/>
-        <Button Content="1" Grid.Column="0" Grid.Row="5" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="2" Grid.Column="1" Grid.Row="5" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="3" Grid.Column="2" Grid.Row="5" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="+" Grid.Column="3" Grid.Row="5" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation"/>
-        <Button Content="4" Grid.Column="0" Grid.Row="4" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="5" Grid.Column="1" Grid.Row="4" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="6" Grid.Column="2" Grid.Row="4" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="-" Grid.Column="3" Grid.Row="4" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation"/>
-        <Button Content="7" Grid.Column="0" Grid.Row="3" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="8" Grid.Column="1" Grid.Row="3" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="9" Grid.Column="2" Grid.Row="3" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber"/>
-        <Button Content="*" Grid.Column="3" Grid.Row="3" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation"/>
-        <Button Content="(" Grid.Column="0" Grid.Row="2" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOpenBracket"/>
-        <Button Content=")" Grid.Column="1" Grid.Row="2" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickCloseBracket"/>
-        <Button Content="X^2" Grid.Column="2" Grid.Row="2" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation"/>
-        <Button Content="/" Grid.Column="3" Grid.Row="2" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation"/>
-        <Button Content="CE" Grid.Column="0" Grid.Row="1" Background="#FF666665" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickCE"/>
-        <Button Content="C" Grid.Column="1" Grid.Row="1" Background="#FF666665" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickC"/>
-        <Button Content="√x" Grid.Column="2" Grid.Row="1" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation"/>
-        <Button Content="%" Grid.Column="3" Grid.Row="1" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation"/>
-        <TextBlock x:Name="textBlockRes" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="160" Foreground="#FF7E7E7E" FontSize="14" FontFamily="Bahnschrift SemiBold Condensed" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock" Grid.ColumnSpan="4" Background="Black" Foreground="#FF24BB0C" FontSize="48" FontFamily="Bahnschrift Condensed" FlowDirection="RightToLeft" Margin="0,0,0,0" Text="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1"  />
+        <Button Content="+/-" Grid.Column="0" Grid.Row="5" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickSign" Margin="0,0,0,0"/>
+        <Button Content="0" Grid.Column="1" Grid.Row="5" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="," Grid.Column="2" Grid.Row="5" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickPoint" Margin="0,0,0,0"/>
+        <Button Content="=" Grid.Column="3" Grid.Row="5" Background="#FFB65147" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickEqls" Margin="0,0,0,0"/>
+        <Button Content="1" Grid.Column="0" Grid.Row="4" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="2" Grid.Column="1" Grid.Row="4" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="3" Grid.Column="2" Grid.Row="4" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="+" Grid.Column="3" Grid.Row="4" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation" Margin="0,0,0,0"/>
+        <Button Content="4" Grid.Column="0" Grid.Row="3" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="5" Grid.Column="1" Grid.Row="3" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="6" Grid.Column="2" Grid.Row="3" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="-" Grid.Column="3" Grid.Row="3" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation" Margin="0,0,0,0"/>
+        <Button Content="7" Grid.Column="0" Grid.Row="2" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="8" Grid.Column="1" Grid.Row="2" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="9" Grid.Column="2" Grid.Row="2" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickNumber" Margin="0,0,0,0"/>
+        <Button Content="*" Grid.Column="3" Grid.Row="2" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation" Margin="0,0,0,0"/>
+        <Button Content="X^2" Grid.Column="2" Grid.Row="1" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickMath" Margin="0,0,0,0"/>
+        <Button Content="/" Grid.Column="3" Grid.Row="1" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickOperation" Margin="0,0,0,0"/>
+        <Button Content="C" Grid.Row="1" Background="#FF666665" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickC" Margin="0,0,0,0"/>
+        <Button Content="√x" Grid.Row="1" Background="#FFD8D3B8" BorderBrush="#FF555555" FontSize="22" FontFamily="Bahnschrift SemiBold" Click="ButtonClickMath" Margin="0,0,0,0" Grid.Column="1"/>
+        <TextBlock x:Name="textSign" Grid.Column="0" TextWrapping="Wrap" Background="Black" Foreground="#FF24BB0C" FontSize="40" FontFamily="Bahnschrift SemiBold Condensed"/>
     </Grid>
 </Window>
